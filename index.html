@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stle.css">
+<script src="https://kit.fontawesome.com/a36274a5a7.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+       <div class="container">
+           <nav>
+               <img src="images/logo.png" class="logo">
+               <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li> 
+                   <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>      
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav>
+           <div class="header-text">
+               <p>ZACK</p>
+               <h1>Hi I am <span>ZACK </span>GURU <br>from  Wise Computer</h1>       
+           </div>
+       </div> 
+    </div>
+<!--    about-->
+    <div id="about">
+       <div class="container">
+           <div class="row">
+               <div class="about-col-1">
+                   <img src="images/wiseman.png">
+               </div>
+               <div class="about-col-2">
+                   <h1 class="sub-title">About Wise Guru</h1>
+                   <p>Hey! I'm your go-to IT guy, offering comprehensive tech solutions. From troubleshooting hardware and software issues to network management and system administration, I ensure seamless operations.<br> Explore my skills in action through past projects. Ready to optimize your technology and streamline your digital life? Let's connect and discuss your IT needs!</p>
+                   
+                   <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                           <li><span>UI/UX</span><br>Desinging UI/UX Interface</li>
+                           <li><span>WeB Dev</span><br>Building webApp</li>
+                           <li><span>App Dev</span><br>Deploying UI/UX Apps</li>
+                       </ul>                           
+                   </div>
+                           <div class="tab-contents" id="education">
+                       <ul>
+                           <li><span>2000-2009</span><br>Desinging UI/UX Interface</li>
+                           <li><span>2010-2013</span><br>Building webApp</li>
+                           <li><span>2014-2017</span><br>Deploying UI/UX Apps</li>
+                       </ul>                           
+                   </div>
+                           <div class="tab-contents" id="experience">
+                       <ul>
+                           <li><span>2018-2019</span><br>Desinging UI/UX Interface</li>
+                           <li><span>2013-2021</span><br>Building webApp</li>
+                           <li><span>2021-to date</span><br>Deploying UI/UX Apps</li>
+                       </ul>                           
+                   </div>
+               </div>
+           </div>    
+       </div>
+    </div>
+<!--    services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+                <div>
+                   <i class="fa-solid fa-camera"></i>
+                    <h2>Photography Videography</h2>
+                    <p>Capturing moments and crafting visual stories is my passion. My lens focuses on portraiture, landscape, and event photography, delivering vibrant and evocative images. <br>Browse my portfolio to see the world through my eyes. Let's connect and discuss how I can help you preserve your precious memories or elevate your visual content.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <h2>UX/UI Design and WeB Dev</h2>
+                    <p>Hello there! I craft engaging and user-friendly websites. My expertise spans front-end (HTML, CSS, JavaScript), back-end (Python, Node.js), and responsive design. Let's collaborate to bring your digital vision to life.<br> Explore my projects below and reach out – I'm eager to build something amazing together!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                   <i class="fa fa-eercast" aria-hidden="true"></i></i>
+                    <h2>Ethical Hacking</h2>
+                    <p>Hi! I'm passionate about fortifying digital landscapes. My expertise lies in ethical hacking, penetration testing, and vulnerability assessments, proactively identifying and mitigating security risks.<br> Explore my projects to see how I help organizations build robust defenses. Let's discuss how I can strengthen your security posture and protect your valuable assets.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!--    portfolio-->
+    <div id="portfolio">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpg" alt="">
+                <div class="layer">
+                    <h3>Photography Videography</h3>
+                      <p>Capturing moments and crafting visual stories is my passion. My lens focuses on portraiture, landscape, and event photography, delivering vibrant and evocative images. <br>Browse my portfolio to see the world through my eyes. Let's connect and discuss how I can help you preserve your precious memories or elevate your visual content.</p>
+                    <a href="#"><i class="fa-solid fa-camera"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>UX/UI Design and WeB Dev</h3>
+                     <p>Hello there! I craft engaging and user-friendly websites. My expertise spans front-end (HTML, CSS, JavaScript), back-end (Python, Node.js), and responsive design. Let's collaborate to bring your digital vision to life.<br> Explore my projects below and reach out – I'm eager to build something amazing together!</p>
+                    <a href="#"><i class="fa fa-microchip"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>Mobile Unlocking</h3>
+                     <p>I provide professional mobile unlocking services, specializing in a wide range of devices and carriers. My portfolio showcases successful unlocks, demonstrating my expertise in safely and efficiently freeing your phone. Get in touch to discuss your unlocking needs and regain control of your device.</p>
+                    <a href="#"><i class="fa fa-mobile"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">see more</a>
+            
+    </div>
+<!--    contact-->
+    <div id="contact"> 
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>071234567</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>                        
+                    </div>
+                    <a href="images/cv-template.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                  <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>  
+                       <input type="email" name="email" placeholder="email" required> 
+                        <textarea name="message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+           <p>Copyright @2025</p> 
+            
+        </div>
+    </div>
+    
+    
+<!--    about scripts-->
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+            }
+              for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+<!--    side menu script-->
+    <script>
+    var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right ="0px";
+        }
+         function closemenu(){
+            sidemeu.style.right ="-200px";
+        }
+            
+    
+    
+    </script>
+<!--    google sheet-->
+   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwbgrYOfkJoQQFv35w85x6jLKE6C0YiUUJR1SW5vyaL6icpPGUmytwbDTvH0irh3_fZ6w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML ="Message sent successfully"
+        setTimeout(function(){
+        msg.innerHTML= ""
+        },5000)
+        form.reset()
+        })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>    
+    
+    
+    
+    
+    
+</html>
